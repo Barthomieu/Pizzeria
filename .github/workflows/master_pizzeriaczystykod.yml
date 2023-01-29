@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'PizzeriaCzystyKod'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F3AE9B55816C44B59A28327EC97DDBB5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FD49A1728C61438CBF87DC49F6718E52 }}
           package: .
