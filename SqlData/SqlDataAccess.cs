@@ -16,7 +16,7 @@ namespace SqlData
         }
         public async Task<List<T>> LoadData<T, U>(string sql, U parameters)
         {
-            string connectionString = Environment.GetEnvironmentVariable("Default")
+            string connectionString = _config.GetConnectionString(ConnectionStringName);
 
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
